@@ -6,3 +6,5 @@ RewriteRule ^$ public/index.php?url=home [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]
+
+# this .htaccess is useful when you don't want to "localhost/my-folder/public" appears in url
